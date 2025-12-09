@@ -1,0 +1,31 @@
+.container {
+    display: grid;
+    height: 100%;
+    /* grid-template-columns: repeat(12, 1fr); */
+    /* grid-template-columns: 1fr 5fr; */
+    grid-template-columns: [main-start] 1fr [content-start] 5fr [content-end main-end];
+    grid-template-rows: [main-start] 40px [content-start] auto [contend-end] 40px [main-end];
+    grid-gap: 3px;
+}
+    
+.header {
+    grid-column: [main-start]/  [main-end];
+}
+
+.menu {
+    
+}
+
+.footer {
+    grid-column: [main-start] / [main-end]
+}
+
+.content {
+    grid-column: [content-start] / [content-end];
+}
+
+.container div {
+    border: 1px solid #ccc;
+    text-align: center;
+
+}

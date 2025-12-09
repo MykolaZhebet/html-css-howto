@@ -1,0 +1,45 @@
+.flexbox-header {
+    display: flex;
+    border: 1px solid black;
+}
+
+.flexbox-header div {
+    border: 1px solid #ccc;
+}
+
+
+.flexbox-header > div:nth-child(3) {
+    margin-left: auto;
+}
+
+.grid-page {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px 200px 40px;
+    border: 1px solid black;
+
+}
+
+.grid-page div {
+    border: 1px solid #ccc;
+}
+
+.header {
+    grid-column: 1 / -1;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+.header > div:nth-child(3) {
+    margin-left: auto;
+}
+.menu {
+    grid-column: 1/2;
+}
+
+.content {
+    grid-column: 2 / -1;
+}
+
+.footer {
+    grid-column: 1 / -1;
+}
