@@ -2,7 +2,23 @@ body {
     font-size: 1.125rem;
     color: #707070;
     margin: 0;
+    background: pink
 }
+
+/*from minimum width and bigger*/
+/* @media (min-width: 500px) and (orientation: landscapeo) {
+    body {
+        background: #ccc;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 649px){
+    body {
+        background: orange;
+    }
+} */
+
+
 
 /* Topography*/
 h1 {
@@ -37,6 +53,7 @@ img {
 .columns {
     margin: 1em 0;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
 }
@@ -63,4 +80,18 @@ img {
 .col-3 {
     width: 70%;
     /* width: 30%; */
+}
+
+@media (max-width: 600px) {
+    .columns {
+        flex-direction: column;
+
+    }
+
+    .col-1,
+    .col-2, 
+    .col-3 {
+        width: 100%;
+        
+    }
 }
